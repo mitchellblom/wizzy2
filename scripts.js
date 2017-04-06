@@ -20,8 +20,8 @@ function doSomething (data) {
 	for (var i = 0; i < data.people.length; i++) {
 		var card = "";
 			card += `<div class="person__container">`
-			card += `<p>${data.people[i].title}</p>`
-			card +=	`<p>${data.people[i].name}</p>`
+			card +=	`<p>${data.people[i].title} ${data.people[i].name}</p>`
+			card +=	`<img class="bioPic" src="${data.people[i].image}" alt="person pic">`
 			card +=	`<p>${data.people[i].bio}</p>`
 			card +=	`</div>`
 		$("#cardContainer").append(card)

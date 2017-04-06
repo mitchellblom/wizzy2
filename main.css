@@ -10,6 +10,7 @@ body {
 	margin: 25px;
 	text-align: justify;
 	vertical-align: top;
+	border-radius: 2%;
 }
 
 .person__container section {
@@ -19,6 +20,7 @@ body {
 .bioPic {
 	width: 200px;
 	height: 250px;
+	border-radius: 10%;
 }
 
 .person__container:nth-child(2n) {
