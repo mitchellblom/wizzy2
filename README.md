@@ -1,6 +1,6 @@
 # NSS WYSIWYG Part 2
 
-![Splashpage]()
+![Splashpage](https://github.com/mitchellblom/wizzy2/blob/wizzy2/wizzy2-retake.png)
 
 <hr>
 
