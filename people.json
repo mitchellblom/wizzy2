@@ -1,17 +1,17 @@
 {
     "people": [{
-        "title": "Samurai",
-        "name": "Tomoe Gozen",
-        "bio": "Serving under Minamoto Yoshinaka, Tomoe was one of his finest soldiers, and her skills in battle dwarfed many of those held by even the strongest men in her unit.",
-        "image": "https://upload.wikimedia.org/wikipedia/commons/4/48/Tomoe-Gozen.jpg",
+        "title": "President",
+        "name": "Abraham Lincoln",
+        "bio": "Abraham Lincoln was an American politician and lawyer who served as the 16th President of the United States from March 1861 until his assassination in April 1865.",
+        "image": "http://civilwardailygazette.com/wp-content/uploads/2013/07/dec8lincoln.png",
         "lifespan": {
-            "birth": 1747,
-            "death": 1797
+            "birth": 1809,
+            "death": 1865
         }
     }, {
         "title": "Sir",
         "name": "Isaac Newton",
-        "bio": "Sir Isaac Newton was an English mathematician, astronomer, and physicist who is widely recognised as one of the most influential scientists of all time and a key figure in the scientific revolution.",
+        "bio": "Sir Isaac Newton was an English mathematician, astronomer, and physicist who is widely recognized as one of the most influential scientists of all time and a key figure in the scientific revolution.",
         "image": "https://upload.wikimedia.org/wikipedia/commons/3/39/GodfreyKneller-IsaacNewton-1689.jpg",
         "lifespan": {
             "birth": 1643,

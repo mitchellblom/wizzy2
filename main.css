@@ -67,7 +67,9 @@ h1 {
 #userInputTextBox {
 	width: 45%;
 	height: 100px;
-	overflow: scroll;
+	/*overflow:scroll; */
+	overflow-x: auto; 
+	overflow-y: scroll;
 }
 /*
 input.break {
