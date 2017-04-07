@@ -5,7 +5,7 @@
 <hr>
 
 ## Project Summary and Requirements
-Former exercise rewritten using ***jQuery*** & **AJAX** instead of vanilla **JavaScript** & simple Key/Value pairs.
+Former exercise rewritten using **jQuery** & **AJAX** instead of vanilla **JavaScript** & simple Key/Value pairs.
 
 <hr>
 
@@ -27,4 +27,4 @@ Former exercise rewritten using ***jQuery*** & **AJAX** instead of vanilla **Jav
 ## Demonstrated
  - Editing of legacy code
  - **AJAX** to load **JSON**
- - ***jQuery***
+ - **jQuery**
