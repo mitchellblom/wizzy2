@@ -23,10 +23,22 @@ function doSomething (data) {
 }
 
 $("#cardContainer").click(function(data) {
-	if (data.target.className === "bioDescrip") {
+	var clickedBio = data.target;
+	if (clickedBio.className === "bioDescrip") {
 	$("#userInputTextBox").focus();
-	$("#userInputTextBox").val(data.target.innerHTML);
+	$("#userInputTextBox").val(clickedBio.innerHTML);
 	} else {
 		$("#userInputTextBox").val("");
+		clickedBio = "";
 	}
+	$("#userInputTextBox").keypress(function() {
+			clickedBio.innerHTML = $("#userInputTextBox").val();
+            // $("#userInputTextBox").keydown() = function() {
+            // 	console.log("keydown");
+                // if (window.event.keyCode === 13) {
+                //     clickedBio = "";
+                //     userInputText.value = "";
+                // }
+            // }
+        });
  });
