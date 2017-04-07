@@ -2,7 +2,7 @@ body {
 	background-color: navajowhite;
 }
 
-.person__container {
+.person_container {
 	display: inline-block;
 	border: 5px solid black;
 	width: 300px;
@@ -13,7 +13,7 @@ body {
 	border-radius: 2%;
 }
 
-.person__container section {
+.person_container section {
 	min-height: 100px;
 }
 
@@ -23,11 +23,11 @@ body {
 	border-radius: 10%;
 }
 
-.person__container:nth-child(2n) {
+.person_container:nth-child(2n) {
 	background-color: lightyellow;
 }
 
-.person__container:nth-child(2n+1) {
+.person_container:nth-child(2n+1) {
 	background-color: #8385E6;
 }
 
