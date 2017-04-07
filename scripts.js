@@ -16,15 +16,17 @@ function doSomething (data) {
 			card +=	`<img class="bioPic" src="${data.people[i].image}" alt="person pic">`;
 			card +=	`<p class="bioDescrip" id="bioDescrip[i]">${data.people[i].bio}</p>`;
 			card +=	`</div>`;
+			var descripI = data.people[i];
+
 		$("#cardContainer").append(card);
 	}
 }
 
 $("#cardContainer").click(function(data) {
-	if ($(".bioDescrip")) {
+	if (data.target.className === "bioDescrip") {
 	$("#userInputTextBox").focus();
-	// console.log($("data.target").html());
-	// console.log(data.target.innerHTML);
 	$("#userInputTextBox").val(data.target.innerHTML);
-	};
+	} else {
+		$("#userInputTextBox").val("");
+	}
  });
