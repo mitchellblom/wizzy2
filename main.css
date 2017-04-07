@@ -1,11 +1,11 @@
 body {
-	/*background-color: navajowhite;*/
 	background-image: url("http://www.designbolts.com/wp-content/uploads/2014/03/Yellow-blur-background1.jpg");
 	-webkit-background-size: cover;
   	-moz-background-size: cover;
   	-o-background-size: cover;
   	background-size: cover;
   	padding: 1% 3%;
+  	text-align: center;
 }
 
 .person_container {
@@ -52,11 +52,25 @@ body {
 	border: 5px dotted red;
 }
 
-h1, h5 {
+h1, h4 {
 	font-family: 'Baloo Bhaina', cursive;*/
 }
 
+h1 {
+	font-size: 4em;
+}
 
+.buttonWrap {
+	margin: 1% 0;
+}
+
+#userInputTextBox {
+	width: 45%;
+	height: 100px;
+	overflow: scroll;
+}
 /*
-font-family: 'Pacifico', cursive;
-font-family: 'Baloo Bhaina', cursive;*/
+input.break {
+	word-wrap: break-word;
+    word-break: break-all;
+}*/
