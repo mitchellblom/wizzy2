@@ -23,22 +23,29 @@ function createCards(data) {
 }
 
 $("#cardContainer").click(function(data) {
-            clickedBio = data.target;
-            if (clickedBio.className === "bioDescrip") {
-                userInputText.focus();
-                userInputText.val(clickedBio.innerHTML);
-                userInputText.keyup(function() {
-                    clickedBio.innerHTML = userInputText.val();
-                    if (window.event.keyCode === 13) {
-                        clickedBio = "";
-                        userInputText.val("");
-                    }
-                });
-            } else {
+    clickedBio = data.target;
+    if (clickedBio.className === "bioDescrip") {
+        userInputText.focus();
+        userInputText.val(clickedBio.innerHTML);
+        $(".redDottedBorder").removeClass("redDottedBorder");
+        $(clickedBio).parent().addClass("redDottedBorder");
+        userInputText.keyup(function() {
+            clickedBio.innerHTML = userInputText.val();
+            if (window.event.keyCode === 13) {
+                clickedBio = "";
                 userInputText.val("");
             }
-            $("#submit").click(function() {
-                    clickedBio = "";
-                    userInputText.val("");
-                });
-            });
+        });
+    } else {
+        userInputText.val("");
+    }
+    $("#submit").click(function() {
+        $(clickedBio).val("");
+        userInputText.val("");
+    });
+});
+
+// $(clickedBio).on("click", ".person_container", function(e) {
+//     $(".clicked").removeClass("clicked");
+//     $(this).addClass("clicked");
+// });

@@ -48,7 +48,7 @@ body {
 	background-color: #8385E6;
 }
 
-.clicked {
+.redDottedBorder {
 	border: 5px dotted red;
 }
 
