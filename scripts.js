@@ -1,6 +1,6 @@
 var data;
 var userInputText = $("#userInputTextBox");
-var clickedBio;
+var clickedCard;
 
 $.ajax({
     url: ["people.json"]
@@ -23,16 +23,16 @@ function createCards(data) {
 }
 
 $("#cardContainer").click(function(data) {
-    clickedBio = data.target;
-    if (clickedBio.className === "bioDescrip") {
+    clickedCard = data.target;
+    if (clickedCard.className === "person_container") {
         userInputText.focus();
-        userInputText.val(clickedBio.innerHTML);
+        userInputText.val($(clickedCard).children(".bioDescrip").html());
         $(".redDottedBorder").removeClass("redDottedBorder");
-        $(clickedBio).parent().addClass("redDottedBorder");
+        $(clickedCard).addClass("redDottedBorder");
         userInputText.keyup(function() {
-            clickedBio.innerHTML = userInputText.val();
+            $(clickedCard).children(".bioDescrip").html(userInputText.val());
             if (window.event.keyCode === 13) {
-                clickedBio = "";
+                clickedCard = "";
                 userInputText.val("");
             }
         });
@@ -40,12 +40,7 @@ $("#cardContainer").click(function(data) {
         userInputText.val("");
     }
     $("#submit").click(function() {
-        $(clickedBio).val("");
+        $(clickedCard).val("");
         userInputText.val("");
     });
 });
-
-// $(clickedBio).on("click", ".person_container", function(e) {
-//     $(".clicked").removeClass("clicked");
-//     $(this).addClass("clicked");
-// });
