@@ -25,15 +25,18 @@ function createCards(data) {
 // $("body").click(userInputText.val(""));
 
 $("#cardContainer").on("click", ".person_container", function(data) {
-    console.log(this);
-        // clickedCard = this;
+     console.log(this); 
+        userInputText.val("");
+        clickedCard = $(this);
         userInputText.focus();
-        userInputText.val($(".bioDescrip").html());
+        userInputText.val($(this).children(".bioDescrip").html());
         $(".redDottedBorder").removeClass("redDottedBorder");
-        $(this).addClass("redDottedBorder");
+        clickedCard.addClass("redDottedBorder");
         userInputText.keyup(function() {
-            $(".bioDescrip").html(userInputText.val());
+            console.log($(this).children(".bioDescrip").html); // untested
+            $(this).children(".bioDescrip").html(userInputText.val()); ///// CONTINUE HERE
             if (window.event.keyCode === 13) {
+                clickedCard.val("");
                 userInputText.val("");
             }
         });
